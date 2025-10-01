@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Ejemplos clase.iml" filepath="$PROJECT_DIR$/.idea/Ejemplos clase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hilos/Hilos.iml" filepath="$PROJECT_DIR$/Hilos/Hilos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/procesos/procesos.iml" filepath="$PROJECT_DIR$/procesos/procesos.iml" />
+    </modules>
+  </component>
+</project>

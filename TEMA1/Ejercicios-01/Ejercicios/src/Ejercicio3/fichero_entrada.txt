@@ -1,0 +1,10 @@
+INFO;Inicio del programa
+ERROR;No se pudo conectar a la BD
+WARN;Memoria al 80%
+INFO;Usuario logueado
+INFO;El sistema arrancó correctamente
+ERROR;No se pudo conectar a la BD
+ERROR;No se pudo conectar a la BD
+ERROR;No se pudo conectar a la BD
+ERROR;No se pudo conectar a la BD
+
