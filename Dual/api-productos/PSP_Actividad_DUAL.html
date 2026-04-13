@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>PSP Actividad DUAL - API Productos</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.7; color: #1a1a2e; background: #ffffff;
+            padding: 40px 60px; max-width: 900px; margin: 0 auto;
+        }
+        .cover {
+            page-break-after: always; display: flex; flex-direction: column;
+            justify-content: center; align-items: center; min-height: 90vh;
+            text-align: center; border: 3px solid #2d3436; border-radius: 12px;
+            padding: 60px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+        .cover h1 { font-size: 2.8em; font-weight: 700; color: #2d3436; margin-bottom: 20px; border: none; padding: 0; }
+        .cover .subtitle { font-size: 1.4em; color: #636e72; margin-bottom: 40px; }
+        .cover .info { font-size: 1.1em; color: #636e72; line-height: 2; }
+        .cover .info strong { color: #2d3436; }
+        .toc-page { page-break-after: always; padding-top: 30px; }
+        .toc-title { font-size: 2em; font-weight: 700; color: #2d3436; border-bottom: 3px solid #0984e3; padding-bottom: 10px; margin-bottom: 25px; }
+        .toc { padding: 0; }
+        .toc a { color: #2d3436; text-decoration: none; display: block; padding: 6px 0; border-bottom: 1px dotted #dfe6e9; transition: color 0.2s; }
+        .toc a:hover { color: #0984e3; }
+        .toc-level-1 { font-size: 1.15em; font-weight: 700; margin-top: 14px; }
+        .toc-level-1 a { border-bottom: 1px solid #b2bec3; padding: 8px 0; }
+        .toc-level-2 { font-size: 1em; font-weight: 600; padding-left: 22px; color: #0984e3; }
+        .toc-level-2 a { color: #0984e3; }
+        .toc-level-3 { font-size: 0.92em; font-weight: 400; padding-left: 44px; color: #636e72; }
+        .toc-level-3 a { color: #636e72; }
+        .section-divider { page-break-before: always; margin-top: 40px; }
+        h1 { font-size: 1.9em; font-weight: 700; color: #2d3436; padding-bottom: 10px; border-bottom: 3px solid #0984e3; margin: 30px 0 20px 0; }
+        h2 { font-size: 1.4em; font-weight: 600; color: #0984e3; margin: 25px 0 12px 0; }
+        h3 { font-size: 1.15em; font-weight: 600; color: #2d3436; margin: 20px 0 10px 0; }
+        h4 { font-size: 1em; font-weight: 600; color: #636e72; margin: 15px 0 8px 0; }
+        p { margin: 8px 0; text-align: justify; }
+        ul, ol { margin: 10px 0 10px 25px; }
+        li { margin: 5px 0; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; font-size: 0.9em; }
+        th { background: #0984e3; color: white; padding: 10px 12px; text-align: left; font-weight: 600; }
+        td { padding: 8px 12px; border-bottom: 1px solid #dfe6e9; }
+        tr:nth-child(even) td { background: #f8f9fa; }
+        pre { background: #2d3436; color: #dfe6e9; padding: 15px 20px; border-radius: 8px; overflow-x: auto; margin: 12px 0; font-size: 0.85em; line-height: 1.5; }
+        code.inline { background: #f1f3f5; color: #e74c3c; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+        pre code { background: none; color: inherit; padding: 0; }
+        a { color: #0984e3; text-decoration: none; }
+        strong { font-weight: 600; }
+        @media print {
+            body { padding: 20px 40px; }
+            .cover { border: 2px solid #2d3436; }
+            pre { white-space: pre-wrap; word-wrap: break-word; }
+        }
+        @page { margin: 2cm; size: A4; }
+    </style>
+</head>
+<body>
+    <div class="cover">
+        <h1>PSP Actividad DUAL</h1>
+        <div class="subtitle">Desarrollo de Servicio REST Seguro</div>
+        <div class="info">
+            <p><strong>Módulo:</strong> Programación de Servicios y Procesos</p>
+            <p><strong>Ciclo:</strong> 2º DAM</p>
+            <p><strong>Curso:</strong> 2025/2026</p>
+        </div>
+    </div>
+    <div class="toc-page">
+<h1 class="toc-title">Índice</h1>
+<div class="toc">
+<div class="toc-level-1"><a href="#sec-1-actividad-dual-programación-de-servicios-y-procesos-psp">Actividad DUAL - Programación de Servicios y Procesos (PSP)</a></div>
+<div class="toc-level-2"><a href="#sec-2-1-desarrollo-de-un-servicio-rest-sencillo-ra4">1. Desarrollo de un servicio REST sencillo (RA4)</a></div>
+<div class="toc-level-2"><a href="#sec-3-2-añadir-medidas-básicas-de-seguridad-al-servicio-rest-ra5">2. Añadir medidas básicas de seguridad al servicio REST (RA5)</a></div>
+</div>
+</div>
+    <h1 id="sec-1-actividad-dual-programación-de-servicios-y-procesos-psp">Actividad DUAL - Programación de Servicios y Procesos (PSP)</h1>
+<p><strong>Proyecto:</strong> API REST de Gestión de Productos (<code class="inline">api-productos</code>)</p>
+<p>---</p>
+<h2 id="sec-2-1-desarrollo-de-un-servicio-rest-sencillo-ra4">1. Desarrollo de un servicio REST sencillo (RA4)</h2>
+<p><strong>1. Elección del Framework:</strong></p>
+<p>Para el desarrollo de la API REST se ha optado por el framework <strong>Spring Boot</strong> utilizando Java 21, al ser el estándar principal empleado en el entorno profesional para la creación de microservicios robustos.</p>
+<p><strong>2. Entidad Gestionada:</strong></p>
+<p>La aplicación desarrolla una API REST orientada a la gestión y mantenimiento de un catálogo de <strong>Productos</strong>. Las propiedades fundamentales de cada producto incluyen: <code class="inline">id</code>, <code class="inline">nombre</code>, <code class="inline">descripcion</code>, <code class="inline">precio</code> y <code class="inline">stock</code> (cantidad disponible). </p>
+<p><strong>3. Implementación de Operaciones Básicas (CRUD):</strong></p>
+<p>Se ha implementado un servicio RESTful completo en la clase <code class="inline">ProductoController.java</code>, ofreciendo los siguientes <em>endpoints</em> para interactuar con el recurso:</p>
+<ul>
+<li><strong><code class="inline">GET /api/productos</code></strong>: Retorna la lista de todos los productos del catálogo.</li>
+<li><strong><code class="inline">GET /api/productos/{id}</code></strong>: Obtiene la información detallada de un producto específico.</li>
+<li><strong><code class="inline">POST /api/productos</code></strong>: Crea y añade un nuevo producto a la base de datos.</li>
+<li><strong><code class="inline">PUT /api/productos/{id}</code></strong>: Modifica y actualiza la información de un producto preexistente.</li>
+<li><strong><code class="inline">DELETE /api/productos/{id}</code></strong>: Elimina permanentemente un producto del catálogo.</li>
+</ul>
+<p><strong>4. Pruebas y Funcionamiento Funcional:</strong></p>
+<p>El funcionamiento del servicio se verificó íntegramente mediante la herramienta <strong>Postman</strong>. Todas las rutas y sus <em>payloads</em> JSON se han documentado en una colección <code class="inline">postman_collection.json</code> exportada junto al proyecto, garantizando respuestas HTTP estándar (<code class="inline">200 OK</code> en aciertos, <code class="inline">404 Not Found</code> o <code class="inline">400 Bad Request</code> en fallos).</p>
+<p>---</p>
+<h2 id="sec-3-2-añadir-medidas-básicas-de-seguridad-al-servicio-rest-ra5">2. Añadir medidas básicas de seguridad al servicio REST (RA5)</h2>
+<p><strong>1. Sistema de Autenticación:</strong></p>
+<p>Se ha dotado a la API de un sistema de seguridad implementando HTTP Basic Authentication a través de <strong>Spring Security</strong>. El acceso se gestiona mediante la clase <code class="inline">SecurityConfig.java</code>, donde se ha creado en memoria (para fines de esta práctica) un usuario con privilegios de administrador:</p>
+<ul>
+<li><strong>Usuario:</strong> <code class="inline">admin</code></li>
+<li><strong>Contraseña:</strong> <code class="inline">admin123</code> (encriptada con BCrypt)</li>
+</ul>
+<p><strong>2. Restricción de Acceso y Rutas Protegidas:</strong></p>
+<p>Se ha implementado un esquema de autorización y protección de acceso basado en roles aplicados a las rutas HTTP de la API, cumpliendo con el principio de mínimo privilegio:</p>
+<ul>
+<li><strong>Rutas Públicas:</strong> Se ha configurado el acceso sin restricciones (público) a las operaciones de consulta pasiva:</li>
+<li><code class="inline">GET /api/productos</code> (Cualquier cliente puede ver el catálogo)</li>
+<li><code class="inline">GET /api/productos/{id}</code></li>
+<li><strong>Rutas Protegidas:</strong> El sistema exige estar autenticado como <code class="inline">ADMIN</code> para operaciones que alteran el estado o la información (inserción, actualización, eliminación):</li>
+<li><code class="inline">POST</code>, <code class="inline">PUT</code> y <code class="inline">DELETE</code> hacia <code class="inline">/api/productos/**</code> serán interceptados y denegarán el acceso inmediato (<code class="inline">HTTP 401 Unauthorized</code>) si el usuario no aporta las credenciales correctas en la cabecera HTTP.</li>
+</ul>
+<p><strong>3. Validación de Datos (Data Validation):</strong></p>
+<p>Para garantizar la integridad y coherencia de la información almacenada en el sistema, se han aplicado reglas de <strong>validación estricta</strong> a las peticiones entrantes utilizando las anotaciones de validación nativas (<code class="inline">jakarta.validation</code>). El objeto de transferencia <code class="inline">ProductoDTO</code> incluye las siguientes restricciones de validación:</p>
+<ul>
+<li><code class="inline">@NotBlank</code>: El <code class="inline">nombre</code> del producto no puede estar vacío.</li>
+<li><code class="inline">@NotNull</code> y <code class="inline">@Positive</code>: El <code class="inline">precio</code> debe existir obligatoriamente y no puede ser negativo ni 0.</li>
+<li><code class="inline">@Min(0)</code>: El <code class="inline">stock</code> no puede tomar valores por debajo de 0 (no concebimos inventario negativo).</li>
+</ul>
+<p>Si una solicitud <code class="inline">POST</code> o <code class="inline">PUT</code> incumple estas reglas, Spring rechaza automáticamente la inyección de datos retornando un error HTTP <code class="inline">400 Bad Request</code>.</p>
+<p><strong>4. Documentación de Seguridad (Evidencias de Funcionamiento):</strong></p>
+<p>A continuación, se adjuntan las capturas correspondientes usando el cliente a terminal <code class="inline">ClienteConsola.java</code> y/o Postman:</p>
+<ul>
+<li><strong>Acceso Permitido (200 OK):</strong> <em>(Añade aquí tu captura en Word demostrando una petición POST o GET exitosa autenticándote con admin:admin123)</em></li>
+<li><strong>Acceso Denegado (401 Unauthorized):</strong> <em>(Añade aquí tu captura en Word demostrando el intento de crear o borrar un producto sin estar logueado o introduciendo datos inválidos que devuelven un 400 Bad Request)</em></li>
+</ul>
+<p>---</p>
+<p><strong>Conclusión de la Actividad:</strong></p>
+<p>El desarrollo consolida los resultados de aprendizaje (RA4 y RA5) creando un servicio distribuido eficiente en red, que a la par se encuentra asegurado criptográficamente y protegido frente a alteraciones no validadas o usuarios sin permisos adecuados.</p>
+</body>
+</html>

@@ -1,0 +1,96 @@
+Actividad DUAL 1
+RA2 1. Análisis del uso de bases de datos en el entorno profesional
+- Identifica algún proceso de la empresa que implique almacenamiento o intercambio de
+datos (clientes, pedidos, inventario, etc.).
+- Describe cómo se gestionan esos datos (hojas Excel, software de gestión, formularios,
+correo, etc.).
+- Reflexiona qué ventajas tendría usar una base de datos relacional en ese contexto.
+2. Creación de una base de datos de práctica
+- Diseña en tu equipo una base de datos sencilla con SQLite, MySQL local o DBeaver,
+simulando el proceso identificado en la empresa.
+- Conéctala desde un programa sencillo en Java o Python (puede ser un proyecto ya
+trabajado en clase).
+- Realiza operaciones básicas: inserción, consulta, modificación y eliminación de registros.
+- Realiza una aplicación (usando la tecnología que prefieras) que permita iniciar sesion y
+explotar el CRUD de la base de datos.
+3. Simulación de transacciones y reflexión sobre integridad
+- Crea un pequeño guion SQL con varias operaciones encadenadas y añade instrucciones
+COMMIT y ROLLBACK para simular transacciones.
+- Documenta cómo se mantienen la integridad y la consistencia de los datos.
+- Añade una breve reflexión sobre cómo se podrían aplicar estos mecanismos en el entorno
+real de la empresa.
+- Busca documentos XML reales o públicos (facturas electrónicas, feeds RSS,
+configuraciones, informes, etc.).
+- Describe en qué contextos podría usarse el formato XML en una empresa.
+- Valora sus ventajas e inconvenientes frente a otros formatos (JSON, CSV, SQL).
+
+RA5 1. Análisis de uso del formato XML en el entorno laboral
+- Busca documentos XML reales o públicos (facturas electrónicas, feeds RSS,
+configuraciones, informes, etc.).
+- Describe en qué contextos podría usarse el formato XML en una empresa.
+- Valora sus ventajas e inconvenientes frente a otros formatos (JSON, CSV, SQL).
+2. Creación y manipulación de documentos XML
+- Crea una pequeña base de datos o carpeta de documentos XML (por ejemplo,
+empleados.xml, productos.xml, pedidos.xml).
+- Usa clases DOM o SAX en Java para leer, modificar y eliminar nodos del documento.
+- Documenta el proceso con fragmentos de código o capturas.
+
+3. Gestión y organización de colecciones XML
+- Estructura los documentos XML en carpetas o colecciones lógicas.
+- Crea y elimina archivos o directorios según distintos criterios (por ejemplo, año,
+departamento, cliente).
+- Explica cómo se podrían mantener estas colecciones en un entorno de trabajo real.
+
+Nota importante:
+En el caso de que en la empresa donde se realicen las prácticas ya se trabajen estas
+actividades (o actividades de naturaleza similar) y/o se desarrollen parcial o
+totalmente los Resultados de Aprendizaje (RA) mencionados, no será necesario
+entregar las actividades propuestas en este módulo.
+En su lugar, el alumnado deberá entregar obligatoriamente:
+●​ Un informe detallado en el que se indique:​
+○​ Qué actividades reales de la empresa se corresponden con cada RA.​
+○​ Dónde y cómo se trabajan dichos RA (tareas concretas, tecnologías,
+metodologías, responsabilidades del alumno, etc.).​
+○​ Evidencias claras de que los RA se desarrollan de forma efectiva durante las
+prácticas.​
+●​ Preferiblemente, un repositorio en GitHub (o similar) que sirva como resumen
+técnico, donde se recojan:​
+○​ Código desarrollado.​
+○​ Estructura del proyecto.​
+○​ Breve documentación o README explicativo.​
+○​ Ejemplos representativos del trabajo realizado.​
+
+Si la documentación presentada es suficiente, clara y verificable, quedarán
+convalidadas las actividades correspondientes, considerándose los RA como
+correctamente trabajados y evaluados.
+
+AD RA Trabajados
+2. Desarrolla aplicaciones que gestionan información almacenada en bases de
+datos relacionales identificando y utilizando mecanismos de conexión.
+
+Criterios de evaluación:
+a)​ Se han valorado las ventajas e inconvenientes de utilizar conectores.
+b)​ Se han utilizado gestores de bases de datos embebidos e independientes.
+c)​ Se ha utilizado el conector idóneo en la aplicación.
+d)​ Se ha establecido la conexión.
+e)​ Se ha definido la estructura de la base de datos.
+f)​ Se han desarrollado aplicaciones que modifican el contenido de la base de datos.
+g)​ Se han definido los objetos destinados a almacenar el resultado de las consultas.
+h)​ Se han desarrollado aplicaciones que efectúan consultas.
+i)​ Se han eliminado los objetos una vez finalizada su función.
+j)​ Se han gestionado las transacciones.
+5. Desarrolla aplicaciones que gestionan la información almacenada en bases de
+datos nativas XML evaluando y utilizando clases específicas.
+Criterios de evaluación:
+a)​ Se han valorado las ventajas e inconvenientes de utilizar una base de datos nativa
+XML.
+b)​ Se ha instalado el gestor de base de datos.
+c)​ Se ha configurado el gestor de base de datos.
+d)​ Se ha establecido la conexión con la base de datos.
+e)​ Se han desarrollado aplicaciones que efectúan consultas sobre el contenido de la
+base de datos.
+f)​ Se han añadido y eliminado colecciones de la base de datos.
+g)​ Se han desarrollado aplicaciones para añadir, modificar y eliminar documentos XML
+de la base de datos.
+
+
