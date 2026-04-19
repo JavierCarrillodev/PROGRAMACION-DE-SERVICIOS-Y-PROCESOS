@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Ejer1/Ejer1.iml" filepath="$PROJECT_DIR$/Ejer1/Ejer1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Ejercicio2/Ejercicio2.iml" filepath="$PROJECT_DIR$/Ejercicio2/Ejercicio2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EjerciciosClases1/Ejercicio2/Ejercicio2.iml" filepath="$PROJECT_DIR$/EjerciciosClases1/Ejercicio2/Ejercicio2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EjercicioClases1/EjercicioClases.iml" filepath="$PROJECT_DIR$/EjercicioClases1/EjercicioClases.iml" />
       <module fileurl="file://$PROJECT_DIR$/Practica-Guiada/Practica-Guiada.iml" filepath="$PROJECT_DIR$/Practica-Guiada/Practica-Guiada.iml" />
       <module fileurl="file://$PROJECT_DIR$/Sintaxis/Sintaxis.iml" filepath="$PROJECT_DIR$/Sintaxis/Sintaxis.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Sockets.iml" filepath="$PROJECT_DIR$/.idea/Sockets.iml" />
